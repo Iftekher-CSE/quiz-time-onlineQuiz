@@ -1,11 +1,14 @@
 import React from "react";
+import Header from "../Header/Header";
+import QuizSub from "../QuizSub/QuizSub";
 
-const Analysis = () => {
+const Home = () => {
     return (
         <div>
-            <h4>Home</h4>
+            <Header></Header>
+            <QuizSub></QuizSub>
         </div>
     );
 };
 
-export default Analysis;
+export default Home;

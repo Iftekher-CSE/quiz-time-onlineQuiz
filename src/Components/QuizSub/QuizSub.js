@@ -1,11 +1,11 @@
 import React from "react";
 
-const Analysis = () => {
+const QuizSub = () => {
     return (
         <div>
-            <h4>QuizSubject</h4>
+            <h4>quiz sub</h4>
         </div>
     );
 };
 
-export default Analysis;
+export default QuizSub;

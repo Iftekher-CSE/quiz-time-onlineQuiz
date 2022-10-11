@@ -1,11 +1,11 @@
 import React from "react";
 
-const Analysis = () => {
+const Question = () => {
     return (
         <div>
-            <h4>Question</h4>
+            <h4>Questions</h4>
         </div>
     );
 };
 
-export default Analysis;
+export default Question;
