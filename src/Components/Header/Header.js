@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div className="flex justify-around  items-center border-2 border-yellow-500 rounded-xl">
             <div className="bg-orange-500 px-5 pt-5 pb-10 rounded-2xl text-white font-bold">
-                <h3 className="text-3xl">In this website you can:</h3>
+                <h3 className="text-3xl py-4">In this website you can:</h3>
                 <p className="flex">
                     <CheckCircleIcon className="h-5 w-5 text-white" />
                     Attend on online quiz on Web Development.
