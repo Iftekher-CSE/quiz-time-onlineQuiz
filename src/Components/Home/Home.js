@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <div className="flex border-2 mt-8 border-orange-300 rounded-2xl">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 border-2 mt-8 border-orange-300 rounded-2xl">
                 {quizSubjects.data.map(quizSub => (
                     <QuizSub key={quizSub.id} quizSub={quizSub}></QuizSub>
                 ))}

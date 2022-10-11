@@ -15,14 +15,14 @@ import { QuizSubDataContext } from "../Main/Main";
 
 const Analysis = () => {
     const quizData = useContext(QuizSubDataContext);
-    console.log(quizData.data);
+    // console.log(quizData.data);
 
     return (
-        <div className="flex">
-            <div className="p-6">
+        <div className="flex justify-center flex-wrap md:flex-nowrap">
+            <div className="p-2">
                 <BarChart
                     className="bg-yellow-400 rounded-2xl m-6"
-                    width={500}
+                    width={400}
                     height={250}
                     data={quizData.data}
                 >
@@ -37,10 +37,10 @@ const Analysis = () => {
                     Bar Chart on topic wise total quiz
                 </h4>
             </div>
-            <div className="p-6">
+            <div className="p-2">
                 <PieChart
                     className="bg-yellow-400 rounded-2xl m-6"
-                    width={500}
+                    width={400}
                     height={250}
                 >
                     <Pie
