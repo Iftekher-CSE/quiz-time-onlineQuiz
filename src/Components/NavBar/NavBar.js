@@ -43,7 +43,7 @@ const NavBar = () => {
                 <ul className="menu menu-horizontal p-0">
                     <li tabIndex={0}>
                         <a>
-                            <Bars3Icon className="w-7 h-7 font-bold"></Bars3Icon>
+                            <Bars3Icon className="w-8 h-6"></Bars3Icon>
                         </a>
                         <ul className=" bg-yellow-400">
                             <li>

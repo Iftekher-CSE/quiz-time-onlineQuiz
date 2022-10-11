@@ -4,9 +4,9 @@ import Options from "../Options/Options";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Question = ({ quiz }) => {
+const Question = ({ quiz, SetCorrectCount, correctCount }) => {
     const { correctAnswer, options, question } = quiz;
-    // console.log(quiz);
+
     // toast for correct answer------
     const showAnswer = () => toast(`Correct answer is: "${correctAnswer}"`);
 
@@ -30,6 +30,8 @@ const Question = ({ quiz }) => {
                         key={index}
                         option={option}
                         correctAnswer={correctAnswer}
+                        SetCorrectCount={SetCorrectCount}
+                        correctCount={correctCount}
                     ></Options>
                 ))}
             </div>
