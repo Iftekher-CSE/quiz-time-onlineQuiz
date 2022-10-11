@@ -27,6 +27,10 @@ function App() {
                 },
                 {
                     path: "/quiz/:subID",
+                    loader: ({ params }) =>
+                        fetch(
+                            `https://openapi.programming-hero.com/api/quiz/${params.subID}`
+                        ),
                     element: <Quiz></Quiz>,
                 },
                 {

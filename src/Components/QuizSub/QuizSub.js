@@ -8,7 +8,7 @@ const QuizSub = ({ quizSub }) => {
         navigate(`/quiz/${subID}`);
     };
     return (
-        <div className="p-6">
+        <div className="p-2">
             <div className="card w-50 bg-base-100 shadow-xl border-2 rounded-2xl">
                 <figure className="px-5 pt-5">
                     <img
@@ -20,7 +20,7 @@ const QuizSub = ({ quizSub }) => {
                 <div className="card-body items-center text-center">
                     <h2 className="card-title text-xl">Quiz On: {name}</h2>
                     <p>
-                        In this section total question is{" "}
+                        Total question is{" "}
                         <span className="font-bold ">{total}</span>
                     </p>
                     <div className="card-actions">
