@@ -6,13 +6,15 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Question = ({ quiz }) => {
     const { correctAnswer, id, options, question } = quiz;
-    console.log(quiz);
-    // const showCorrectAnswer = () => toast({ correctAnswer });
+    // console.log(quiz);
+    // toast for correct answer------
     const showAnswer = () => toast(`Correct answer is: "${correctAnswer}"`);
+
     return (
         <div className="p-2 border-2 m-3 rounded-2xl border-orange-600">
             <div className="flex">
-                <h4>Question: {question}</h4>
+                <h4>Question: {question.slice(3, -4)}</h4>
+                {/* Answer show in toast */}
                 <div className="flex items-center">
                     <button onClick={showAnswer}>
                         <QuestionMarkCircleIcon className="h-7 w-7 text-orange-600"></QuestionMarkCircleIcon>
@@ -21,9 +23,14 @@ const Question = ({ quiz }) => {
                 </div>
             </div>
 
+            {/* Option component */}
             <div className="pt-4">
                 {options.map(option => (
-                    <Options key={id} option={option}></Options>
+                    <Options
+                        key={id}
+                        option={option}
+                        correctAnswer={correctAnswer}
+                    ></Options>
                 ))}
             </div>
         </div>
