@@ -25,9 +25,9 @@ const Question = ({ quiz }) => {
 
             {/* Option component */}
             <div className="pt-4">
-                {options.map(option => (
+                {options.map((option, index) => (
                     <Options
-                        key={id}
+                        key={index}
                         option={option}
                         correctAnswer={correctAnswer}
                     ></Options>

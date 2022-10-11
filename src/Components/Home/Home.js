@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 import Header from "../Header/Header";
+import { QuizSubDataContext } from "../Main/Main";
 import QuizSub from "../QuizSub/QuizSub";
 
 const Home = () => {
-    const quizSubjects = useLoaderData();
+    const quizSubjects = useContext(QuizSubDataContext);
     // console.log(quizSubjects.data);
     return (
         <div>
