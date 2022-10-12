@@ -66,9 +66,12 @@ const Blog = () => {
                 </div>
                 <div className="collapse-content">
                     <p>
-                        The <strong>useRef</strong> Hook is a function that
-                        returns a <strong>mutable</strong> ref object whose
-                        <strong>.current</strong> property is initialized with
+                        The <strong>useRef</strong> is a hook that allows to
+                        directly create a reference to the DOM element in the
+                        functional component. The <strong>useRef</strong> Hook
+                        is a function that returns a <strong>mutable</strong>{" "}
+                        ref object whose
+                        <strong> .current</strong> property is initialized with
                         the passed argument <strong>(initialValue)</strong>. The
                         returned object will persist for the full lifetime of
                         the component. <br />

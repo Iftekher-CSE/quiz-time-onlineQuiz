@@ -1,4 +1,7 @@
 ---
+Project Name: Quiz Time
+live site link: https://luxury-jelly-679c29.netlify.app/quiz/4
+
 
 In this website you can:
 
@@ -6,9 +9,6 @@ In this website you can:
 2. Check your result immediately with a toast display
 3. Graphical presentation of your total number of quiz on each subject.
 4. Blogs on different web development topics.
-
----
-
 ---
 
 Tools used in development:

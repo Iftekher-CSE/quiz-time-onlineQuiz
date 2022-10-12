@@ -16,7 +16,10 @@ const Question = ({ quiz, SetCorrectCount, correctCount }) => {
                 <h4>Question: {question.slice(3, -4)}</h4>
                 {/* Answer show in toast */}
                 <div className="flex items-center">
-                    <button onClick={showAnswer}>
+                    <button
+                        title="Show the correct answer"
+                        onClick={showAnswer}
+                    >
                         <QuestionMarkCircleIcon className="h-7 w-7 text-orange-600"></QuestionMarkCircleIcon>
                     </button>
                     <ToastContainer />
